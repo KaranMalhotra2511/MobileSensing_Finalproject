@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/RelLayoutId">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List of Available Resources!"
+        android:id="@+id/Sample1"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hadoop-elephant.jpg"
+        android:id="@+id/Sample2"
+        android:textAlignment="center"
+        android:layout_below="@+id/Sample1"/>
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/CaptureVideo"
+        android:layout_below="@+id/Sample2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Music_quote.jpg"
+        android:id="@+id/Sample3"
+        android:textAlignment="center"
+        android:layout_below="@+id/CaptureVideo"/>
+    <VideoView
+        android:layout_width="200dp"
+        android:layout_height="160dp"
+        android:id="@+id/CaptureVideo1"
+        android:layout_below="@+id/Sample3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Sample4"
+        android:textAlignment="center"
+        android:layout_below="@+id/CaptureVideo1"/>
+    <VideoView
+        android:layout_width="200dp"
+        android:layout_height="160dp"
+        android:id="@+id/CaptureVideo2"
+        android:layout_below="@+id/Sample4"/>
+
+    <TextView
+        android:id="@+id/locationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CaptureVideo2"/>
+    <TextView
+        android:id="@+id/addressLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/locationLabel"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/callbackText1"
+        android:layout_below="@id/addressLabel"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/callbackText"
+        android:layout_below="@id/CaptureVideo2"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
